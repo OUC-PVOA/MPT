@@ -15,7 +15,7 @@ Intelligent Marine Technology and System(IMTS), 2024
 1. [Abstract](#Abstract)
 2. [Dataset Description](#Dataset-Description)
 3. [Dataset Download](#Dataset-Download)
-4. [Proposed Method:DSFT](#Proposed-Method:DSFT)
+4. [Proposed Method: DSFT](#Proposed-Method:-DSFT)
 5. [Installation](#Installation)
 6. [Run Demo](#Run-Demo)
 7. [Data preparation](#Data-preparation)
@@ -39,7 +39,7 @@ MPT is a large-scale, high difficulty video dataset of phytoplankton. In the dat
 
 ##### The MPT dataset can be downloaded from the following link: [[baidu(code:PVOA)]](https://pan.baidu.com/s/1MXt0slp2vIPCqB64VHk1Mg)
 
-### Proposed Method:DSFT
+### Proposed Method: DSFT
 
 #### Overall structure diagram
 
