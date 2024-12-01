@@ -3,7 +3,7 @@
 
 ## MPT: A Large-scale Multi-Phytoplankton Tracking Benchmark
 
-Yang Yu, [Yuezun Li](https://yuezunli.github.io/), Xin Sun, Junyu Dong
+Yang Yu, [Yuezun Li](https://yuezunli.github.io/), Xin Sun, [Junyu Dong](https://it.ouc.edu.cn/djy/)
 
 Ocean University of China, China
 
