@@ -39,7 +39,7 @@ MPT is a large-scale, high difficulty video dataset of phytoplankton. In the dat
 
 ##### The MPT dataset can be downloaded from the following link: [[baidu(code:PVOA)]](https://pan.baidu.com/s/1MXt0slp2vIPCqB64VHk1Mg)
 
-### <span>Proposed Method: DSFT</span>
+### Proposed Method<br>: DSFT
 
 #### Overall structure diagram
 
