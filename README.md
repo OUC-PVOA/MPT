@@ -37,7 +37,7 @@ MPT is a large-scale, high difficulty video dataset of phytoplankton. In the dat
 
 ### Dataset Download
 
-##### The MPT dataset can be downloaded from the following link: [[baidu(code:PVOA)]](https://pan.baidu.com/s/1MXt0slp2vIPCqB64VHk1Mg)
+##### The MPT dataset can be downloaded from the following link: [[baidu(code:t29b)]]([https://pan.baidu.com/s/1MXt0slp2vIPCqB64VHk1Mg](https://pan.baidu.com/s/1frgxo2Vl8JirpLJTvbs9lQ))
 
 ### Proposed Method
 
@@ -109,7 +109,7 @@ cd $DSFT_ROOT/src/lib/model/networks/DCNv2
 Note: We found the nuScenes and MOT dataset API versions are not compatible, you can switch between them by running 'sh mot_switch_version.sh' (for MOT experiments) or 'sh nuscenes_switch_version.sh' (for nuScenes experiments). The default installed versions are for MOT dataset.
 
 ### Run Demo
-The weights have been placed in the models folder. Then, cd `DSFT_ROOT/src/`. The demo result will be saved as a video in `DSFT_ROOT/results/`.
+The model weights are placed in the same link as the MPT dataset. Then, cd `DSFT_ROOT/src/`. The demo result will be saved as a video in `DSFT_ROOT/results/`.
 
 ```shell
 python demo.py tracking --dataset MPT --load_model ../models/dsft.pth --demo ../videos --pre_hm --ltrb_amodal --pre_thresh 0.5 --track_thresh 0.4 --inference --clip_len 3 --trades --save_video --resize_video --input_h 640 --input_w 960
@@ -145,7 +145,7 @@ You can use the following command to train on the MPT dataset：
 ```shell
 python main.py tracking --exp_id MPT --dataset MPT --ltrb_amodal --pre_hm --shift 0.05 --scale 0.05 --hm_disturb 0.05 --lost_disturb 0.4 --fp_disturb 0.1 --num_epochs 60 --lr_step 39,51 --save_point 20,30,40,50 --gpus 0 --batch_size 4 --lr 2.0e-4 --num_workers 8 --clip_len 3 --max_frame_dist 10 --trades
 ```
-The trained model is available in the models folder.
+The model weights are placed in the same link as the MPT dataset.
 
 ### Citation
 ```
