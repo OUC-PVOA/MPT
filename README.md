@@ -4,8 +4,11 @@
 ## MPT: A Large-scale Multi-Phytoplankton Tracking Benchmark
 
 Yang Yu, [Yuezun Li](https://yuezunli.github.io/), Xin Sun, Junyu Dong
+
 Ocean University of China, China
+
 Intelligent Marine Technology and System(IMTS), 2024
+
 *[arXiv 2410.16695](https://arxiv.org/abs/2410.16695)*
 
 ### Contents
@@ -23,15 +26,14 @@ Intelligent Marine Technology and System(IMTS), 2024
 
 ### Abstract
 Phytoplankton are a crucial component of aquatic ecosystems, and effective monitoring of them can provide valuable insights into ocean environments and ecosystem changes. Traditional phytoplankton monitoring methods are often complex and lack timely analysis. Therefore, deep learning algorithms offer a promising approach for automated phytoplankton monitoring. However, the lack of large-scale, high-quality training samples has become a major bottleneck in advancing phytoplankton tracking. In this paper, we propose a challenging benchmark dataset, Multiple Phytoplankton Tracking (MPT), which covers diverse background information and variations in motion during observation. The dataset includes 27 species of phytoplankton and zooplankton, 14 different backgrounds to simulate diverse and complex underwater environments, and a total of 140 videos. To enable accurate real-time observation of phytoplankton, we introduce a multi-object tracking method, Deviation-Corrected Multi-Scale Feature Fusion Tracker(DSFT), which addresses issues such as focus shifts during tracking and the loss of small target information when computing frame-to-frame similarity. Specifically, we introduce an additional feature extractor to predict the residuals of the standard feature extractor's output, and compute multi-scale frame-to-frame similarity based on features from different layers of the extractor. Extensive experiments on the MPT have demonstrated the validity of the dataset and the superiority of DSFT in tracking phytoplankton, providing an effective solution for phytoplankton monitoring.
-<!-- <p align="center"><img src="assets/example.jpg" width="400"/></p> -->
-![example](https://hackmd.io/_uploads/BJMKa2lb1e.png)
 
+<p align="center"><img src="assets/example.jpg" width="600"/></p>
 
 
 ### Dataset Description
 MPT is a large-scale, high difficulty video dataset of phytoplankton. In the dataset, we have set up a detals.txt file in each video file, which stores the number of samples, total video frames, sample jitter amplitude, and sample movement speed set when creating the dataset. There are two annotation files under each video file, where gt.txt does not include occlusion factors, and the other annotation file includes occlusion parameters.
 
-![dataset](https://hackmd.io/_uploads/SkJLpnxWkx.png)
+<p align="center"><img src="assets/dataset.jpg" width="800"/></p>
 
 ### Dataset Download
 
@@ -41,8 +43,7 @@ MPT is a large-scale, high difficulty video dataset of phytoplankton. In the dat
 
 #### Overall structure diagram
 
-<!-- <p align="center"><img src="assets/overview.jpg" width="400"/></p> -->
-![overview](https://hackmd.io/_uploads/H14oanxZJx.png)
+<p align="center"><img src="assets/overview.jpg" width="800"/></p>
 
 
 #### The performance of various methods on the MPT dataset
@@ -114,7 +115,7 @@ The weights have been placed in the models folder. Then, cd `DSFT_ROOT/src/`. Th
 python demo.py tracking --dataset MPT --load_model ../models/dsft.pth --demo ../videos --pre_hm --ltrb_amodal --pre_thresh 0.5 --track_thresh 0.4 --inference --clip_len 3 --trades --save_video --resize_video --input_h 640 --input_w 960
 ```
 
-![1733028107594](https://hackmd.io/_uploads/BJRXFDt7Jx.png)
+<p align="center"><img src="assets/Visualization.jpg" width="800"/></p>
 
 
 
