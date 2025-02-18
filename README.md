@@ -89,7 +89,7 @@ pip install cython; pip install -U 'git+https://github.com/cocodataset/cocoapi.g
 
 3. Clone this repo:
 ```shell
-git clone https://github.com/chyangyu/MPT.git
+git clone https://github.com/OUC-PVOA/MPT.git
 ```
 
 4. Install the requirements
